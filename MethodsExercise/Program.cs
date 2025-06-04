@@ -24,7 +24,7 @@
             Console.WriteLine($"animal: {usersAnimal}, Favorite Band: {usersBand}");
         }
 
-        static int addNums(params int[] num1)
+        static int AddNums(params int[] num1)
         {
             int sum=0;
             
@@ -36,10 +36,10 @@
             return sum;
         }
         
-        static int subNums(params int[] num1)
+        static int SubNums(params int[] num1)
         {
-            Console.WriteLine("Please enter Subtracting number");
-            int sum = int.Parse(Console.ReadLine());
+            
+            int sum = 0;
           
             foreach (int num in num1)
             {
@@ -49,10 +49,10 @@
             return sum;
         }
         
-        static int multiNums(params int[] num1)
+        static int MultiNums(params int[] num1)
         {
-            Console.WriteLine("Please enter Multiplying number");
-            int sum = int.Parse(Console.ReadLine());
+            
+            int sum = 0;
             foreach (int num in num1)
             {
                 sum *= num;
@@ -61,10 +61,10 @@
             return sum;
         }
         
-        static int divNums(params int[] num1)
+        static int DivNums(params int[] num1)
         {
-            Console.WriteLine("Please enter Dividing number");
-            int sum = int.Parse(Console.ReadLine());
+            
+            int sum = 0;
             
             foreach (int num in num1)
             {
@@ -79,10 +79,10 @@
             
             Story();
          
-            Console.WriteLine(addNums(1, 2, 3));
-            Console.WriteLine(subNums(10, 6, 3));
-            Console.WriteLine(multiNums(2, 2, 5));
-            Console.WriteLine(divNums(4, 2, 3));
+            Console.WriteLine(AddNums(1, 2, 3));
+            Console.WriteLine(SubNums(10, 6, 3));
+            Console.WriteLine(MultiNums(2, 2, 5));
+            Console.WriteLine(DivNums(4, 2, 3));
             
         }
     }
